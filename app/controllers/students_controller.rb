@@ -6,11 +6,9 @@ class StudentsController < ApplicationController
             {
                 include: 
                 {
-                    codeclan:
-                        # {
-                        #     include: {:codeclan}
-                        # }
-                    {only: :location}
+                    cohort:
+                     
+                    {only: :number}
                 }
             }
         )
